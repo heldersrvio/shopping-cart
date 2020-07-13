@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500&family=Grenze+Gotisch:wght@200;300;400;500;600;700;800&display=swap');
 
 #home {
-    text-align: center;
+	text-align: center;
 }
 
 #home h2 {
-    font-family: 'Baloo Da 2', cursive;
-    font-size: 30px;
+	font-family: 'Baloo Da 2', cursive;
+	font-size: 30px;
 }
 
 #home p {
-    font-family: 'Baloo Da 2', cursive;
+	font-family: 'Baloo Da 2', cursive;
 }

@@ -17,8 +17,12 @@ const NavigationBar = (props) => {
 				</div>
 			</div>
 			<div id="navigation-bottom-section">
-				<Link to="/" className={props.isHome ? "active" : ""}>Home</Link>
-				<Link to="/shop" className={!props.isHome ? "active" : ""}>Shop</Link>
+				<Link to="/" className={props.isHome ? 'active' : ''}>
+					Home
+				</Link>
+				<Link to="/shop" className={!props.isHome ? 'active' : ''}>
+					Shop
+				</Link>
 			</div>
 		</div>
 	);

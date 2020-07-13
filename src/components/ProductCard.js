@@ -7,10 +7,10 @@ const ProductCard = (props) => {
 	const [quantity, setQuantity] = useState(1);
 
 	const addToCart = () => {
-        if (quantity > 0) {
-            setIsInCart(true);
-		    props.updateCart(quantity, props.productPrice);
-        }
+		if (quantity > 0) {
+			setIsInCart(true);
+			props.updateCart(quantity, props.productPrice);
+		}
 	};
 
 	const removeFromCart = () => {
@@ -20,15 +20,15 @@ const ProductCard = (props) => {
 
 	const changeQuantity = (newQuantity) => {
 		if (newQuantity >= 0) {
-            console.log('Changing quantity...');
+			console.log('Changing quantity...');
 			const oldQuantity = quantity;
 			if (newQuantity === 0 && isInCart) {
 				setIsInCart(false);
 			}
-            setQuantity(newQuantity);
-            if (isInCart) {
-                props.updateCart(newQuantity - oldQuantity, props.productPrice);
-            }
+			setQuantity(newQuantity);
+			if (isInCart) {
+				props.updateCart(newQuantity - oldQuantity, props.productPrice);
+			}
 		}
 	};
 
@@ -55,9 +55,7 @@ const ProductCard = (props) => {
 			<div className="product-card-bottom-section">
 				{addRemoveButton}
 				<br></br>
-				<label
-					for={`${props.productId}-quantity`}
-				>Quantity: </label>
+				<label for={`${props.productId}-quantity`}>Quantity: </label>
 				<input
 					id={`${props.productId}-quantity`}
 					type="number"

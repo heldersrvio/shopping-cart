@@ -1,48 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500&family=Grenze+Gotisch:wght@200;300;400;500;600;700;800&display=swap');
 
 #navigation-bar {
-    text-align: center;
-    position: sticky;
-    top: 0;
-    background-color: darkred;
-    padding: 15px;
-    color: white;
-    box-shadow: 0px 10px 15px rgb(192, 122.5, 110);
+	text-align: center;
+	position: sticky;
+	top: 0;
+	background-color: darkred;
+	padding: 15px;
+	color: white;
+	box-shadow: 0px 10px 15px rgb(192, 122.5, 110);
 }
 
 #navigation-bar h1 {
-    margin-top: 0;
-    font-family: 'Grenze Gotisch', cursive;
-    font-weight: 800;
-    font-size: 50px;
-    text-shadow: 0px 0px 5px white;
+	margin-top: 0;
+	font-family: 'Grenze Gotisch', cursive;
+	font-weight: 800;
+	font-size: 50px;
+	text-shadow: 0px 0px 5px white;
 }
 
 #cart {
-    text-align: left;
-    position: absolute;
-    top : 30px;
-    left: 90%;
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
-    font-family: 'Baloo Da 2', cursive;
+	text-align: left;
+	position: absolute;
+	top: 30px;
+	left: 90%;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	font-family: 'Baloo Da 2', cursive;
 }
 
 #cart button {
-    cursor: pointer;
-    margin-top: 15px;
-    width: 80px;
-    font-family: 'Baloo Da 2', cursive;
+	cursor: pointer;
+	margin-top: 15px;
+	width: 80px;
+	font-family: 'Baloo Da 2', cursive;
 }
 
 a {
-    color: white;
-    font-family: 'Baloo Da 2', cursive;
-    margin-left: 10px;
-    text-decoration: none;
+	color: white;
+	font-family: 'Baloo Da 2', cursive;
+	margin-left: 10px;
+	text-decoration: none;
 }
 
 .active {
-    text-decoration: underline;
+	text-decoration: underline;
 }

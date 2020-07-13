@@ -76,8 +76,12 @@ const Shop = (props) => {
 
 	return (
 		<div>
-			<NavigationBar numberOfItemsInCart={props.numberOfItemsInCart} isHome={false} totalToPay={props.totalToPay} />
-			<div id= "products-grid">
+			<NavigationBar
+				numberOfItemsInCart={props.numberOfItemsInCart}
+				isHome={false}
+				totalToPay={props.totalToPay}
+			/>
+			<div id="products-grid">
 				{products.map((product) => {
 					return (
 						<ProductCard
