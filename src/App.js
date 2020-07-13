@@ -6,6 +6,11 @@ import './App.css';
 
 const App = () => {
 	const [numberOfItemsInCart, setNumberOfItemsInCart] = useState(0);
+
+	const updateCart = (increment) => {
+		setNumberOfItemsInCart(() => numberOfItemsInCart + increment);
+	};
+
 	return (
 		<div>
 			<BrowserRouter>
@@ -21,7 +26,11 @@ const App = () => {
 						path="/shop"
 						exact
 						render={(props) => (
-							<Shop {...props} numberOfItemsInCart={numberOfItemsInCart} />
+							<Shop
+								{...props}
+								numberOfItemsInCart={numberOfItemsInCart}
+								updateCart={updateCart}
+							/>
 						)}
 					/>
 				</Switch>

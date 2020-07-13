@@ -3,11 +3,13 @@ import PropTypes from 'prop-types';
 
 const ProductCard = (props) => {
 	const [isInCart, setIsInCart] = useState(false);
-	const [quantity, setQuantity] = useState(0);
+	const [quantity, setQuantity] = useState(1);
 
 	const addToCart = () => {
-		setIsInCart(true);
-		props.updateCart(quantity);
+        if (quantity > 0) {
+            setIsInCart(true);
+		    props.updateCart(quantity);
+        }
 	};
 
 	const removeFromCart = () => {
@@ -17,12 +19,15 @@ const ProductCard = (props) => {
 
 	const changeQuantity = (newQuantity) => {
 		if (newQuantity >= 0) {
+            console.log('Changing quantity...');
 			const oldQuantity = quantity;
 			if (newQuantity === 0 && isInCart) {
 				setIsInCart(false);
 			}
-			setQuantity(newQuantity);
-			props.updateCart(quantity - oldQuantity);
+            setQuantity(newQuantity);
+            if (isInCart) {
+                props.updateCart(newQuantity - oldQuantity);
+            }
 		}
 	};
 
@@ -48,7 +53,7 @@ const ProductCard = (props) => {
 					type="number"
 					min="0"
 					value={quantity}
-					onChange={(e) => changeQuantity(e.target.value)}
+					onChange={(e) => changeQuantity(Number(e.target.value))}
 				></input>
 			</div>
 		</div>
@@ -58,6 +63,7 @@ const ProductCard = (props) => {
 ProductCard.propTypes = {
 	productId: PropTypes.number,
 	productDescription: PropTypes.string,
+	productImage: PropTypes.string,
 	productName: PropTypes.string,
 	updateCart: PropTypes.func,
 };
