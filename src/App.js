@@ -1,15 +1,32 @@
-import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import Home from './Home';
 import Shop from './Shop';
 import './App.css';
 
 const App = () => {
+	const [numberOfItemsInCart, setNumberOfItemsInCart] = useState(0);
 	return (
-		<Switch>
-			<Route path="/" exact component={Home} />
-			<Route path="/shop" exact component={Shop} />
-		</Switch>
+		<div>
+			<BrowserRouter>
+				<Switch>
+					<Route
+						path="/"
+						exact
+						render={(props) => (
+							<Home {...props} numberOfItemsInCart={numberOfItemsInCart} />
+						)}
+					/>
+					<Route
+						path="/shop"
+						exact
+						render={(props) => (
+							<Shop {...props} numberOfItemsInCart={numberOfItemsInCart} />
+						)}
+					/>
+				</Switch>
+			</BrowserRouter>
+		</div>
 	);
 };
 
