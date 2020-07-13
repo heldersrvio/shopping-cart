@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Shopping-Cart/static/css/main.b71370af.chunk.css",
+    "main.js": "/Shopping-Cart/static/js/main.40173f84.chunk.js",
+    "main.js.map": "/Shopping-Cart/static/js/main.40173f84.chunk.js.map",
+    "runtime-main.js": "/Shopping-Cart/static/js/runtime-main.ed685d3e.js",
+    "runtime-main.js.map": "/Shopping-Cart/static/js/runtime-main.ed685d3e.js.map",
+    "static/js/2.5550fc62.chunk.js": "/Shopping-Cart/static/js/2.5550fc62.chunk.js",
+    "static/js/2.5550fc62.chunk.js.map": "/Shopping-Cart/static/js/2.5550fc62.chunk.js.map",
+    "index.html": "/Shopping-Cart/index.html",
+    "precache-manifest.6e69542d86db2231467214a8518eca9f.js": "/Shopping-Cart/precache-manifest.6e69542d86db2231467214a8518eca9f.js",
+    "service-worker.js": "/Shopping-Cart/service-worker.js",
+    "static/css/main.b71370af.chunk.css.map": "/Shopping-Cart/static/css/main.b71370af.chunk.css.map",
+    "static/js/2.5550fc62.chunk.js.LICENSE.txt": "/Shopping-Cart/static/js/2.5550fc62.chunk.js.LICENSE.txt",
+    "static/media/DanmachiOratoria.jpg": "/Shopping-Cart/static/media/DanmachiOratoria.2e41cae5.jpg",
+    "static/media/KotlinStandardLibrary.png": "/Shopping-Cart/static/media/KotlinStandardLibrary.9a71c7c4.png",
+    "static/media/Lear.jpg": "/Shopping-Cart/static/media/Lear.4ff72396.jpg",
+    "static/media/NyahyssavEmiliLonneberga.jpg": "/Shopping-Cart/static/media/NyahyssavEmiliLonneberga.2da842d1.jpg",
+    "static/media/Python.jpg": "/Shopping-Cart/static/media/Python.43c391b8.jpg",
+    "static/media/TennouNoNihonshi.jpg": "/Shopping-Cart/static/media/TennouNoNihonshi.7a2ae519.jpg",
+    "static/media/ThePriorityOfTheOrangeTree.jpg": "/Shopping-Cart/static/media/ThePriorityOfTheOrangeTree.9b4267c0.jpg",
+    "static/media/iOS13.jpg": "/Shopping-Cart/static/media/iOS13.cd8e8201.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed685d3e.js",
+    "static/js/2.5550fc62.chunk.js",
+    "static/css/main.b71370af.chunk.css",
+    "static/js/main.40173f84.chunk.js"
+  ]
+}
