@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500&family=Grenze+Gotisch:wght@200;300;400;500;600;700;800&display=swap');
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 270px;
+    height: 550px;
+    background-color: white;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.product-card img {
+    width: 270px;
+    max-height: 350px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.product-info {
+    padding: 10px;
+    font-weight: 500;
+}
+
+.product-card-bottom-section {
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+.product-card-bottom-section button {
+    cursor: pointer;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+.product-card-bottom-section input {
+    width: 20px;
+}

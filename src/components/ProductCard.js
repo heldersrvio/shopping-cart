@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
+import './ProductCard.css';
 
 const ProductCard = (props) => {
 	const [isInCart, setIsInCart] = useState(false);
@@ -8,13 +9,13 @@ const ProductCard = (props) => {
 	const addToCart = () => {
         if (quantity > 0) {
             setIsInCart(true);
-		    props.updateCart(quantity);
+		    props.updateCart(quantity, props.productPrice);
         }
 	};
 
 	const removeFromCart = () => {
 		setIsInCart(false);
-		props.updateCart(-quantity);
+		props.updateCart(-quantity, props.productPrice);
 	};
 
 	const changeQuantity = (newQuantity) => {
@@ -26,7 +27,7 @@ const ProductCard = (props) => {
 			}
             setQuantity(newQuantity);
             if (isInCart) {
-                props.updateCart(newQuantity - oldQuantity);
+                props.updateCart(newQuantity - oldQuantity, props.productPrice);
             }
 		}
 	};
@@ -45,11 +46,20 @@ const ProductCard = (props) => {
 		<div className="product-card" key={props.productId}>
 			<div className="product-card-top-section">
 				<img src={props.productImage} alt={props.productDescription} />
-				<span>{props.productName}</span>
+				<div className="product-info">
+					<span>{props.productName}</span>
+					<br></br>
+					<span>${props.productPrice}.00</span>
+				</div>
 			</div>
 			<div className="product-card-bottom-section">
 				{addRemoveButton}
+				<br></br>
+				<label
+					for={`${props.productId}-quantity`}
+				>Quantity: </label>
 				<input
+					id={`${props.productId}-quantity`}
 					type="number"
 					min="0"
 					value={quantity}
@@ -65,6 +75,7 @@ ProductCard.propTypes = {
 	productDescription: PropTypes.string,
 	productImage: PropTypes.string,
 	productName: PropTypes.string,
+	productPrice: PropTypes.number,
 	updateCart: PropTypes.func,
 };
 

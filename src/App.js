@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
-import Home from './Home';
-import Shop from './Shop';
+import Home from './components/Home';
+import Shop from './components/Shop';
 import './App.css';
 
 const App = () => {
-	const [numberOfItemsInCart, setNumberOfItemsInCart] = useState(0);
+  const [numberOfItemsInCart, setNumberOfItemsInCart] = useState(0);
+  const [totalToPay, setTotalToPay] = useState(0);
 
-	const updateCart = (increment) => {
-		setNumberOfItemsInCart(() => numberOfItemsInCart + increment);
+	const updateCart = (increment, price) => {
+    setNumberOfItemsInCart(() => numberOfItemsInCart + increment);
+    setTotalToPay(() => totalToPay + (increment * price));
 	};
 
 	return (
@@ -19,7 +21,7 @@ const App = () => {
 						path="/"
 						exact
 						render={(props) => (
-							<Home {...props} numberOfItemsInCart={numberOfItemsInCart} />
+							<Home {...props} numberOfItemsInCart={numberOfItemsInCart} totalToPay={totalToPay} />
 						)}
 					/>
 					<Route
@@ -28,7 +30,8 @@ const App = () => {
 						render={(props) => (
 							<Shop
 								{...props}
-								numberOfItemsInCart={numberOfItemsInCart}
+                numberOfItemsInCart={numberOfItemsInCart}
+                totalToPay={totalToPay}
 								updateCart={updateCart}
 							/>
 						)}
