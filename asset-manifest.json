@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/Shopping-Cart/static/css/main.86c62262.chunk.css",
-    "main.js": "/Shopping-Cart/static/js/main.0dc8ac51.chunk.js",
-    "main.js.map": "/Shopping-Cart/static/js/main.0dc8ac51.chunk.js.map",
-    "runtime-main.js": "/Shopping-Cart/static/js/runtime-main.ed685d3e.js",
-    "runtime-main.js.map": "/Shopping-Cart/static/js/runtime-main.ed685d3e.js.map",
-    "static/js/2.71749cf3.chunk.js": "/Shopping-Cart/static/js/2.71749cf3.chunk.js",
-    "static/js/2.71749cf3.chunk.js.map": "/Shopping-Cart/static/js/2.71749cf3.chunk.js.map",
-    "index.html": "/Shopping-Cart/index.html",
-    "precache-manifest.af9e84582a90a99832c05fd573acd1ee.js": "/Shopping-Cart/precache-manifest.af9e84582a90a99832c05fd573acd1ee.js",
-    "service-worker.js": "/Shopping-Cart/service-worker.js",
-    "static/css/main.86c62262.chunk.css.map": "/Shopping-Cart/static/css/main.86c62262.chunk.css.map",
-    "static/js/2.71749cf3.chunk.js.LICENSE.txt": "/Shopping-Cart/static/js/2.71749cf3.chunk.js.LICENSE.txt",
-    "static/media/DanmachiOratoria.jpg": "/Shopping-Cart/static/media/DanmachiOratoria.2e41cae5.jpg",
-    "static/media/KotlinStandardLibrary.png": "/Shopping-Cart/static/media/KotlinStandardLibrary.9a71c7c4.png",
-    "static/media/Lear.jpg": "/Shopping-Cart/static/media/Lear.4ff72396.jpg",
-    "static/media/NyahyssavEmiliLonneberga.jpg": "/Shopping-Cart/static/media/NyahyssavEmiliLonneberga.2da842d1.jpg",
-    "static/media/Python.jpg": "/Shopping-Cart/static/media/Python.43c391b8.jpg",
-    "static/media/TennouNoNihonshi.jpg": "/Shopping-Cart/static/media/TennouNoNihonshi.7a2ae519.jpg",
-    "static/media/ThePriorityOfTheOrangeTree.jpg": "/Shopping-Cart/static/media/ThePriorityOfTheOrangeTree.9b4267c0.jpg",
-    "static/media/iOS13.jpg": "/Shopping-Cart/static/media/iOS13.cd8e8201.jpg"
+    "main.css": "/shopping-cart/static/css/main.86c62262.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.31d7da3d.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.31d7da3d.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.6e52efc5.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.6e52efc5.js.map",
+    "static/js/2.71749cf3.chunk.js": "/shopping-cart/static/js/2.71749cf3.chunk.js",
+    "static/js/2.71749cf3.chunk.js.map": "/shopping-cart/static/js/2.71749cf3.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "precache-manifest.c23106a076c27e9ae43a4b5f43448691.js": "/shopping-cart/precache-manifest.c23106a076c27e9ae43a4b5f43448691.js",
+    "service-worker.js": "/shopping-cart/service-worker.js",
+    "static/css/main.86c62262.chunk.css.map": "/shopping-cart/static/css/main.86c62262.chunk.css.map",
+    "static/js/2.71749cf3.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.71749cf3.chunk.js.LICENSE.txt",
+    "static/media/DanmachiOratoria.jpg": "/shopping-cart/static/media/DanmachiOratoria.2e41cae5.jpg",
+    "static/media/KotlinStandardLibrary.png": "/shopping-cart/static/media/KotlinStandardLibrary.9a71c7c4.png",
+    "static/media/Lear.jpg": "/shopping-cart/static/media/Lear.4ff72396.jpg",
+    "static/media/NyahyssavEmiliLonneberga.jpg": "/shopping-cart/static/media/NyahyssavEmiliLonneberga.2da842d1.jpg",
+    "static/media/Python.jpg": "/shopping-cart/static/media/Python.43c391b8.jpg",
+    "static/media/TennouNoNihonshi.jpg": "/shopping-cart/static/media/TennouNoNihonshi.7a2ae519.jpg",
+    "static/media/ThePriorityOfTheOrangeTree.jpg": "/shopping-cart/static/media/ThePriorityOfTheOrangeTree.9b4267c0.jpg",
+    "static/media/iOS13.jpg": "/shopping-cart/static/media/iOS13.cd8e8201.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ed685d3e.js",
+    "static/js/runtime-main.6e52efc5.js",
     "static/js/2.71749cf3.chunk.js",
     "static/css/main.86c62262.chunk.css",
-    "static/js/main.0dc8ac51.chunk.js"
+    "static/js/main.31d7da3d.chunk.js"
   ]
 }
